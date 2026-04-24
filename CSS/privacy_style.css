@@ -1,0 +1,115 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  position: fixed;
+  text-align: center;
+  top: 30px;
+  left: 40px;
+  z-index: 9999;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+.btn p {
+  margin-top: 10px;
+  color: #aaa;
+}
+
+.privacy {
+  max-width: 800px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+.privacy h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.privacy h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.privacy p {
+  color: #444;
+  line-height: 1.7;
+}
+
+.privacy ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.privacy li {
+  margin-bottom: 5px;
+}
+
+/* Contact box */
+.contact-box {
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+/* Back button */
+.back-home {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #000;
+  text-decoration: none;
+}
+
+.back-home a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.back-home a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1px;
+  background: #000;
+  transition: 0.3s;
+}
+
+.back-home a:hover::after {
+  width: 100%;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
