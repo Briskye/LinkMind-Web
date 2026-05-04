@@ -40,7 +40,7 @@ section {
 .hero {
   position: relative;
   height: 100vh;
-  background: url("/CSS/football\ linkmind.jpg") center/cover no-repeat;
+  background: url("../images/cover_photo.jpg") center/cover no-repeat;
   padding: 30px;
 }
 
