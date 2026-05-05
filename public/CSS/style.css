@@ -60,6 +60,14 @@ section {
   z-index: 9999;
 }
 
+@media (max-width: 480px) {
+
+  .hero-text {
+    font-size: 10px;
+  }
+
+}
+
 .hero p {
   margin-top: 10px;
   color: #ccc;
