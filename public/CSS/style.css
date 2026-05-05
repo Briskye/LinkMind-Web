@@ -68,6 +68,19 @@ section {
 
 }
 
+section h2 {
+  font-size: clamp(1.3rem, 3vw, 1.6rem);
+  font-weight: 600;
+}
+
+.timeline-item h3 {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+
+
 .hero p {
   margin-top: 10px;
   color: #ccc;
@@ -154,10 +167,9 @@ section {
   display: block;
 }
 
-/* Title */
 .card h3 {
+  font-size: clamp(1rem, 2vw, 1.15rem);
   margin-bottom: 10px;
-  font-size: 1.2rem;
 }
 
 /* Description */
@@ -176,6 +188,8 @@ section {
 .card:hover p {
   color: #ddd;
 }
+
+
 
 /* IMAGE SECTION */
 .image {
