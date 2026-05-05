@@ -17,9 +17,8 @@ body {
 }
 
 .logo {
-  margin-left: 10px;
-  margin-top: 10px;
-  height: 40px;
+  height: clamp(24px, 5vw, 40px);
+  width: auto;
   cursor: pointer;
 }
 
@@ -55,6 +54,7 @@ section {
 .hero-text { 
   position: fixed;
   text-align: center;
+  font-size: 14px;
   top: 30px;
   left: 40px;
   z-index: 9999;

@@ -6,9 +6,15 @@
   font-family: 'Inter', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   position: fixed;
   text-align: center;
+  margin-bottom: 15px;
+  font-size: 14px;
   top: 30px;
   left: 40px;
   z-index: 9999;
@@ -19,9 +25,8 @@ html {
 }
 
 .logo {
-  margin-left: 10px;
-  margin-top: 10px;
-  height: 40px;
+  height: clamp(24px, 5vw, 30px);
+  width: auto;
   cursor: pointer;
 }
 
