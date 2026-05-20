@@ -1,11 +1,13 @@
 require("dotenv").config();
 
 const express = require("express");
-const { Resend } = require("resend");
 const cors = require("cors");
 const path = require("path");
+const { Resend } = require("resend");
 
 const app = express();
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 app.use(cors());
 app.use(express.json());
@@ -16,7 +18,7 @@ app.get("/", (req, res) => {
 });
 
 /* EMAIL CONFIG */
-const resend = new Resend(process.env.RESEND_API_KEY);
+
 
 /* API ROUTE */
 app.post("/send-email", async (req, res) => {
@@ -52,4 +54,10 @@ app.post("/send-email", async (req, res) => {
     console.log(error);
     res.status(500).json({ success: false });
   }
+});
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
