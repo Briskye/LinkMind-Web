@@ -929,3 +929,46 @@ section {
   }
 
 }
+
+#toast {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+
+  min-width: 280px;
+
+  padding: 15px 20px;
+
+  border-radius: 12px;
+
+  color: white;
+
+  font-weight: 500;
+
+  z-index: 999999;
+
+  opacity: 0;
+
+  transform: translateY(-20px);
+
+  transition: all 0.3s ease;
+
+  pointer-events: none;
+}
+
+#toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#toast.success {
+  background: #22c55e;
+}
+
+#toast.error {
+  background: #ef4444;
+}
+
+#toast.sending {
+  background: #3b82f6;
+}
