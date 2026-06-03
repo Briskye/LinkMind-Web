@@ -1,143 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LinkMind PH</title>
-  <link rel="stylesheet" href="CSS/style.css"/>
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkMind PH</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- <div>
-        <a href="/Front-End/index.html">
-            <img class="logo fade" src="/CSS/linkmind logo.png"/>
-        </a>
-    </div> -->
+    <!-- NAVBAR -->
+    <header class="navbar">
 
-    <div class="hero-text hero-content">
-        <a class="linkmind-btn" href="index.html">
-            <img class="logo fade" src="images/linkmind_logo.png"/>
-        <p class="fade">Connecting people's hearts through IT</p>
+        <a href="#hero">
+            <img src="images/linkmind_logo.png" class="logo" alt="Logo">
         </a>
-    </div>
-    <section class="hero">
+
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#updates">Updates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-container">
+
+            <div class="hero-left fade">
+
+                <p class="hero-tag">
+                    AI • IoT • Offshore Development
+                </p>
+
+                <h1>
+                    Connect Minds
+                    <br>
+                    Through Technology
+                </h1>
+
+                <p class="hero-description">
+                    Modern software development solutions built through global collaboration and technical expertise.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#contact" class="hero-btn primary-btn">
+                        Contact Us
+                    </a>
+
+                    <a href="#services" class="hero-btn secondary-btn">
+                        Explore Services
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-right fade">
+
+                <div class="hero-card">
+                    <h3>10+ Years</h3>
+                    <p>Industry Experience</p>
+                </div>
+
+                <div class="hero-card">
+                    <h3>2 Global Bases</h3>
+                    <p>Japan • Philippines </p>
+                </div>
+
+                <div class="hero-card">
+                    <h3>Lower Cost</h3>
+                    <p>Efficient Offshore Development</p>
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
+    <!-- SERVICES -->
+    <section id="services">
 
-    <!-- FEATURES -->
-    <section>
-    <h2 class="fade" style="text-align: center;">Services</h2>
+        <h2 class="section-title fade">
+            Services
+        </h2>
 
-    <div class="grid">
+        <div class="services-grid">
 
-        <a href="#" id="openProjectModal" class="card fade">
-        <h3>📊 Project Performance</h3>
-        <p>Explore our past projects, systems, and solutions delivered across industries.</p>
-        </a>
+            <div class="service-card fade" id="openProjectModal">
 
-        <a href="#" id="openModal" class="card fade">
-        <h3>⚙️ Products & Services</h3>
-        <p>AI, IoT, offshore development, and system integration tailored for your business.</p>
-        </a>
+                <div class="service-icon">📊</div>
 
-        <a href="#" id="openCompanyModal" class="card fade">
-        <h3>🏢 Company Profile</h3>
-        <p>Learn about our vision, leadership, and global partnerships.</p>
-        </a>
+                <h3>Project Performance</h3>
 
-    </div>
+                <p>
+                    Explore our past projects, systems, and solutions delivered across industries.
+                </p>
+
+                <span class="service-link">
+                    Learn More →
+                </span>
+
+            </div>
+
+            <div class="service-card fade" id="openModal">
+
+                <div class="service-icon">⚡</div>
+
+                <h3>Products & Services</h3>
+
+                <p>
+                    AI, IoT, and offshore software development services tailored for modern businesses.
+                </p>
+
+                <span class="service-link">
+                    Learn More →
+                </span>
+
+            </div>
+
+            <div class="service-card fade" id="openCompanyModal">
+
+                <div class="service-icon">🌏</div>
+
+                <h3>Company Profile</h3>
+
+                <p>
+                    Discover Linkmind’s mission, global partnerships, and offshore expertise.
+                </p>
+
+                <span class="service-link">
+                    Learn More →
+                </span>
+
+            </div>
+
+        </div>
+
     </section>
 
     <div id="projectModal" class="modal">
         <div class="modal-content">
 
-        <span class="close-project">&times;</span>
+            <span class="close-project">&times;</span>
 
-        <h2>Project Performance</h2>
-        
-        <div class="modal-scroll">
-            <div class="modal-body">
+            <h2 class="text-color">Project Performance</h2>
 
-            <h3>1. System development project promotion support services</h3>
-            <ul>
-                <li>Project manager for building an official e-book sales site for mobile carriers</li>
-                <li>Remote control server migration support for mobile carriers</li>
-                <li>E-learning system development</li>
-                <li>Survey entry system development</li>
-            </ul>
+            <div class="modal-scroll">
+                <div class="modal-body">
 
-            <h3>2. Offshore Utilization System Development Services</h3>
-            <ul>
-                <li>SMS delivery service development</li>
-                <li>Windows Remote Management Library Development</li>
-                <li>Meal management site for smartphone users</li>
-                <li>Smartphone control gateway for businesses</li>
-            </ul>
+                    <h3>1. System development project promotion support services</h3>
+                    <ul>
+                        <li>Project manager for building an official e-book sales site for mobile carriers</li>
+                        <li>Remote control server migration support for mobile carriers</li>
+                        <li>E-learning system development</li>
+                        <li>Survey entry system development</li>
+                    </ul>
 
-            <h3>3. Smartphone usage support service</h3>
-            <ul>
-                <li>Work Process Management iPad App & Server Requirements</li>
-                <li>Work Process Management iPad App & System Development</li>
-                <li>Sales Catalog iPad App & Management System</li>
-                <li>Business manual viewing iPad app system</li>
-                <li>Electronic approval system support</li>
-                <li>MDM Technology Consulting</li>
-                <li>Overseas MDM Product Support</li>
-                <li>Smartphone/tablet kitting service</li>
-                <li>iOS Developer Enterprise Program support</li>
-                <li>MDM Cloud Service operation & sales support</li>
-                <li>iOS7 upgrade for iPad apps</li>
-            </ul>
+                    <h3>2. Offshore Utilization System Development Services</h3>
+                    <ul>
+                        <li>SMS delivery service development</li>
+                        <li>Windows Remote Management Library Development</li>
+                        <li>Meal management site for smartphone users</li>
+                        <li>Smartphone control gateway for businesses</li>
+                    </ul>
 
-            <h3>4. Other</h3>
-            <ul>
-                <li>Corporate website content management system</li>
-                <li>High school soccer alumni site management</li>
-                <li>Digital processing for electronic magazines</li>
-            </ul>
+                    <h3>3. Smartphone usage support service</h3>
+                    <ul>
+                        <li>Work Process Management iPad App & Server Requirements</li>
+                        <li>Work Process Management iPad App & System Development</li>
+                        <li>Sales Catalog iPad App & Management System</li>
+                        <li>Business manual viewing iPad app system</li>
+                        <li>Electronic approval system support</li>
+                        <li>MDM Technology Consulting</li>
+                        <li>Overseas MDM Product Support</li>
+                        <li>Smartphone/tablet kitting service</li>
+                        <li>iOS Developer Enterprise Program support</li>
+                        <li>MDM Cloud Service operation & sales support</li>
+                        <li>iOS7 upgrade for iPad apps</li>
+                    </ul>
 
+                    <h3>4. Other</h3>
+                    <ul>
+                        <li>Corporate website content management system</li>
+                        <li>High school soccer alumni site management</li>
+                        <li>Digital processing for electronic magazines</li>
+                    </ul>
+
+                </div>
             </div>
-        </div>
         </div>
     </div>
 
     <div id="modal" class="modal">
-        
+
         <div class="modal-content">
 
             <span class="close">&times;</span>
 
-            <h2>Products and Services</h2>
+            <h2 class="text-color">Products and Services</h2>
 
             <div class="modal-body">
 
-            <h3>1. AI platform development and implementation support services</h3>
-            <p>AI analysis of sound and image sources improves the efficiency of inspection operations.</p>
+                <h3>1. AI platform development and implementation support services</h3>
+                <p>AI analysis of sound and image sources improves the efficiency of inspection operations.</p>
 
-            <h3>2. IoT platform development and implementation support services</h3>
-            <p>We aggregate sensor data into a cloud environment and process it for customer use.</p>
+                <h3>2. IoT platform development and implementation support services</h3>
+                <p>We aggregate sensor data into a cloud environment and process it for customer use.</p>
 
-            <h3>3. System development project promotion support services</h3>
-            <p>
-                Project managers bridge customers and engineers. We manage projects and ensure success.
-            </p>
+                <h3>3. System development project promotion support services</h3>
+                <p>
+                    Project managers bridge customers and engineers. We manage projects and ensure success.
+                </p>
 
-            <h3>4. Offshore Utilization System Development Services</h3>
-            <p>
-                Cost-effective development with global teams:
-            </p>
-            <ul>
-                <li>China (Shanghai, Dalian)</li>
-                <li>Philippines (Angeles)</li>
-                <li>Myanmar (Yangon)</li>
-            </ul>
+                <h3>4. Offshore Utilization System Development Services</h3>
+                <p>
+                    Cost-effective development with global teams:
+                </p>
+                <ul>
+                    <li>China (Shanghai, Dalian)</li>
+                    <li>Philippines (Angeles)</li>
+                    <li>Myanmar (Yangon)</li>
+                </ul>
 
-            <h3>5. Smartphone usage support service</h3>
-            <p>
-                End-to-end support from device setup to app development and management systems.
-            </p>
+                <h3>5. Smartphone usage support service</h3>
+                <p>
+                    End-to-end support from device setup to app development and management systems.
+                </p>
 
             </div>
         </div>
@@ -147,291 +244,496 @@
 
         <div class="modal-content">
 
-        <span class="close-company">&times;</span>
+            <span class="close-company">&times;</span>
 
-        <h2 class="line-border">Company Profile</h2>
+            <h2 class="line-border text-color">Company Profile</h2>
 
-        <div class="modal-scroll">
-            <div class="modal-body">
+            <div class="modal-scroll">
+                <div class="modal-body">
 
-            <p>
-                Linkmind Inc.'s vision is to "connect people's hearts through IT."
-                While social networks allow sharing, they may not bridge generations
-                or cultural differences. Link Mind aims to connect minds in the real world.
-            </p>
+                    <p>
+                        Linkmind Inc.'s vision is to "connect people's hearts through IT."
+                        While social networks allow sharing, they may not bridge generations
+                        or cultural differences. Link Mind aims to connect minds in the real world.
+                    </p>
 
-            <h3 class="line-border">Company Information</h3>
-            <ul>
-                <li><strong>Company Name:</strong> Linkmind Co., Ltd</li>
-                <li><strong>Date of Establishment:</strong> October 10, 2012</li>
-                <li><strong>Capital:</strong> 1,000,000 yen</li>
-                <li><strong>Representative:</strong> Takashi Nakamura</li>
-                <li><strong>Address:</strong> 4-40-12 Maekawa, Kawaguchi City, Saitama</li>
-                <li><strong>Contact:</strong> 080-1282-5854</li>
-            </ul>
+                    <h3>Company Information</h3>
+                    <ul>
+                        <li><strong>Company Name:</strong> Linkmind Co., Ltd</li>
+                        <li><strong>Date of Establishment:</strong> October 10, 2012</li>
+                        <li><strong>Capital:</strong> 1,000,000 yen</li>
+                        <li><strong>Representative:</strong> Takashi Nakamura</li>
+                        <li><strong>Address:</strong> 4-40-12 Maekawa, Kawaguchi City, Saitama</li>
+                        <li><strong>Contact:</strong> 080-1282-5854</li>
+                    </ul>
 
-            <h3 class="line-border">Main Business Partners</h3>
-            <ul>
-                <li>Realcom Co., Ltd.</li>
-                <li>Orange One Co., Ltd.</li>
-                <li>TeamLab Co., Ltd.</li>
-                <li>Ubitec Co., Ltd.</li>
-                <li>Hinokiya Group Co., Ltd.</li>
-                <li>Haseko Systems Co., Ltd.</li>
-                <li>Change Co., Ltd.</li>
-                <li>Toyota Boshoku Asia</li>
-                <li>Wonder Corporation Co., Ltd.</li>
-                <li>AXSEED Co., Ltd.</li>
-                <li>Infobrain Co., Ltd.</li>
-                <li>OVOL ICT Solutions Inc.</li>
-                <li>Alitas Corporation</li>
-                <li>Technical Brain Co., Ltd.</li>
-                <li>Move Co., Ltd.</li>
-                <li>Tripod Works Co., Ltd.</li>
-                <li>X-Mobile Inc.</li>
-                <li>Manpower Group, Inc.</li>
-                <li>Zizon Co., Ltd.</li>
-                <li>Yamada Homes Co., Ltd.</li>
-                <li>National Institute of Health and Medical Sciences</li>
-                <li>Tama Home Co., Ltd.</li>
-            </ul>
+                    <h3>Main Business Partners</h3>
+                    <ul>
+                        <li>Realcom Co., Ltd.</li>
+                        <li>Orange One Co., Ltd.</li>
+                        <li>TeamLab Co., Ltd.</li>
+                        <li>Ubitec Co., Ltd.</li>
+                        <li>Hinokiya Group Co., Ltd.</li>
+                        <li>Haseko Systems Co., Ltd.</li>
+                        <li>Change Co., Ltd.</li>
+                        <li>Toyota Boshoku Asia</li>
+                        <li>Wonder Corporation Co., Ltd.</li>
+                        <li>AXSEED Co., Ltd.</li>
+                        <li>Infobrain Co., Ltd.</li>
+                        <li>OVOL ICT Solutions Inc.</li>
+                        <li>Alitas Corporation</li>
+                        <li>Technical Brain Co., Ltd.</li>
+                        <li>Move Co., Ltd.</li>
+                        <li>Tripod Works Co., Ltd.</li>
+                        <li>X-Mobile Inc.</li>
+                        <li>Manpower Group, Inc.</li>
+                        <li>Zizon Co., Ltd.</li>
+                        <li>Yamada Homes Co., Ltd.</li>
+                        <li>National Institute of Health and Medical Sciences</li>
+                        <li>Tama Home Co., Ltd.</li>
+                    </ul>
 
+                </div>
             </div>
-        </div>
 
         </div>
     </div>
-    
-    
 
-    <!-- SHOWCASE -->
-    <section class="news-section fade">
-    <h2 class="updates">Latest Updates</h2>
+    <!-- WHY CHOOSE US -->
+    <section class="why-section">
 
-    <div class="timeline">
+        <h2 class="section-title fade">
+            Why Choose Us
+        </h2>
 
-        <div class="timeline-item">
-            <span class="date">Jan 16, 2020</span>
+        <div class="services-grid">
 
-            <h3 class="toggle">Philippine Offshore Development Services Launched</h3>
+            <div class="service-card fade">
 
-            <div class="content">
+                <div class="service-icon">🌍</div>
+
+                <h3>Proven Offshore Experience</h3>
+
                 <p>
-                Linkmind Apps and Testing Inc., Angeles, Philippines, since January 2020 we have begun accepting offshore software development services.
+                    More than 10 years supporting development across Asia.
                 </p>
-                <p>
-                The cost per person-month is about 20～30% lower than the cost in Japan. In principle, the service is in English, but a bridge SE (interpreter and engineer leader)
-                </p>
-                <p>
-                can be added to the development system (similar to the cost per person-month in Japan), so contract development in Japanese is possible.
-                </p>
-                <p>
-                We have a wealth of young talent in the Philippines, so we will strengthen our recruitment efforts in the future and further enhance our system.
-                </p>
+
             </div>
-        </div>
 
-        <div class="timeline-item">
-            <span class="date">June 2, 2017</span>
+            <div class="service-card fade">
 
-            <h3 class="toggle">AI and IoT businesses added to products and services</h3>
+                <div class="service-icon">💰</div>
 
-            <div class="content">
+                <h3>Cost-Effective Solutions</h3>
+
                 <p>
-                We have launched a new AI and IoT business based on the know-how we have accumulated so far.
+                    Reduce development costs while maintaining high engineering quality.
                 </p>
-                
+
             </div>
-        </div>
 
-        <div class="timeline-item">
-            <span class="date">March 10, 2014</span>
 
-            <h3 class="toggle">Updated project performance</h3>
+            <div class="service-card fade">
 
-            <div class="content">
-                <p style="margin-bottom: 10px;">
-                Below, we have added the project results for September 2013 ～ February 2014.
+                <div class="service-icon">👨‍💻</div>
+
+                <h3>Skilled Global Team</h3>
+
+                <p>
+                    Skilled developers supporting modern software projects across multiple industries.
                 </p>
-                <ul>
-                    <li><p>- Work process management iPad app & management server system development</p></li>
-                    <li><p>- Development of iOS7 compatible apps for existing iOS6 compatible iPad apps</p></li>
-                </ul>
-                
+
             </div>
+
         </div>
-
-        <div class="timeline-item">
-            <span class="date">January 1, 2014</span>
-
-            <h3 class="toggle">Happy New Year</h3>
-
-            <div class="content">
-                <p>
-                Last year, we were able to proceed with the business together with all involved parties, and we were able to close the first fiscal year with a profit. Thank you very much.
-                </p>
-                <p>
-                We continued to work with you from October onwards for the second season onwards, and we were able to welcome the start of the new year safely.
-                </p>
-                <p>
-                This year, we will not only continue the work we have done so far, but will also challenge ourselves to become a source of business for ourselves. 
-                </p>
-                <p>
-                Thank you for your continued support this year.
-                </p>
-                <p style="margin-top: 20px;">
-                <strong>Representative Director Takashi Nakamura</strong>
-                </p>
-                
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <span class="date">September 1, 2013</span>
-
-            <h3 class="toggle">Updated project performance</h3>
-
-            <div class="content">
-                <p style="margin-bottom: 10px;">
-                Below, April ～ August 2013 Project performance Added.
-                </p>
-                <ul>
-                    <li><p>- Remote control server migration support for mobile carriers</p></li>
-                    <li><p>- E-learning system development</p></li>
-                    <li><p>- Survey entry system development</p></li>
-                    <li><p>- SMS delivery service development</p></li>
-                    <li><p>- Windows Remote Management Library Development</p></li>
-                    <li><p>- Work Process Management iPad App & Management Server System Requirements Definition</p></li>
-                    <li><p>- Electronic approval system support services</p></li>
-                    <li><p>- Digital processing support for electronic magazines</p></li>
-                </ul>
-                
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <span class="date">March 23, 2013</span>
-
-            <h3 class="toggle">Added project achievements</h3>
-
-            <div class="content">
-                <p>
-                I think it's hard to tell from the names of each service what they're involved in or what areas they have strengths in,
-                </p>
-                <p>
-                so I can't include customer names or details of the cases, but I'd like you to refer to them.
-                </p>
-                <p>
-                Thanks to you, we have been able to get involved in many projects in the six months since we were established. Thank you very much.
-                </p>
-                <p>
-                From now on, we will focus on developing products and services independently so that we can make suggestions and contributions to our customers.
-                </p>
-                <p style="margin-top: 10px;">
-                We would like to continue to look forward to your continued support.
-                </p>
-                
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <span class="date">January 1, 2013</span>
-
-            <h3 class="toggle">Development base in Myanmar</h3>
-
-            <div class="content">
-                <p style="margin-bottom: 10px;">
-                Happy New Year 2013. We would like to thank you for your continued support this year.
-                </p>
-                <p>
-                In December, we were able to connect with Myanmar and decided to create an offshore development base in Yangon.
-                </p>
-                <p>
-                We would like to start by partnering with local companies, securing and developing human resources, and develop our business in Japan with a competitive edge.
-                </p>
-                <p>
-                From now on, we will focus on developing products and services independently so that we can make suggestions and contributions to our customers.
-                </p>
-                <p>
-                If you are a company considering expanding into Myanmar, please feel free to contact us and we will help you link with local networks, including those other than IT infrastructure.
-                </p>
-                
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <span class="date">October 21, 2012</span>
-
-            <h3 class="toggle">Changed banner image</h3>
-
-            <div class="content">
-                <p style="margin-bottom: 10px;">
-                The origin of the company name is "link mind" ＝ "connect the heart".
-                </p>
-                <p>
-                In soccer, it's like forming a circle and trying to unite everyone.
-                </p>
-                <p>
-                I hope to be able to work in the power of IT to connect minds in real-world situations,
-                </p>
-                <p>
-                 specifically bridging the gap between customers and engineers, and engineers and engineers. With that in mind, we changed the banner.
-                </p>
-                
-            </div>
-        </div>
-
-    </div>
 
     </section>
 
-    <section class="why fade">
-    <h2>Why Choose Us</h2>
+    <!-- LATEST UPDATES -->
+    <section class="news-section" id="updates">
 
-    <div class="grid">
-        <div class="card">✔ Proven Offshore Experience</div>
-        <div class="card">✔ Cost-Effective Solutions</div>
-        <div class="card">✔ Skilled Global Team</div>
-    </div>
+        <h2 class="section-title fade">
+            Latest Updates
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item fade">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <span class="date">January 16, 2020</span>
+
+                    <h3 class="toggle">Philippine Offshore Development Services Launched</h3>
+
+                    <div class="content">
+                        <p>
+                            Linkmind Apps and Testing Inc., Angeles, Philippines, since January 2020 we have begun
+                            accepting offshore software development services.
+                        </p>
+                        <p>
+                            The cost per person-month is about 20～30% lower than the cost in Japan. In principle, the
+                            service is in English, but a bridge SE (interpreter and engineer leader)
+                        </p>
+                        <p>
+                            can be added to the development system (similar to the cost per person-month in Japan), so
+                            contract development in Japanese is possible.
+                        </p>
+                        <p>
+                            We have a wealth of young talent in the Philippines, so we will strengthen our recruitment
+                            efforts in the future and further enhance our system.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item fade">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <span class="date">June 2, 2017</span>
+
+                    <h3 class="toggle">AI and IoT Businesses Added</h3>
+
+                    <div class="content">
+                        <p>
+                            We have launched a new AI and IoT business based on the know-how we have accumulated so far.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item fade">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <span class="date">March 10, 2014</span>
+
+                    <h3 class="toggle">Updated project performance</h3>
+
+                    <div class="content">
+                        <p style="margin-bottom: 10px;">
+                            Below, we have added the project results for September 2013 ～ February 2014.
+                        </p>
+                        <ul>
+                            <li>
+                                <p>- Work process management iPad app & management server system development</p>
+                            </li>
+                            <li>
+                                <p>- Development of iOS7 compatible apps for existing iOS6 compatible iPad apps</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item fade">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <span class="date">January 1, 2014</span>
+
+                    <h3 class="toggle">Happy New Year</h3>
+
+                    <div class="content">
+                        <p>
+                            Last year, we were able to proceed with the business together with all involved parties, and
+                            we
+                            were able to close the first fiscal year with a profit. Thank you very much.
+                        </p>
+                        <p>
+                            We continued to work with you from October onwards for the second season onwards, and we
+                            were
+                            able to welcome the start of the new year safely.
+                        </p>
+                        <p>
+                            This year, we will not only continue the work we have done so far, but will also challenge
+                            ourselves to become a source of business for ourselves.
+                        </p>
+                        <p>
+                            Thank you for your continued support this year.
+                        </p>
+                        <p style="margin-top: 20px;">
+                            <strong>Representative Director Takashi Nakamura</strong>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item fade">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <span class="date">September 1, 2013</span>
+
+                    <h3 class="toggle">Updated project performance</h3>
+
+                    <div class="content">
+                        <p style="margin-bottom: 10px;">
+                            Below, April ～ August 2013 Project performance Added.
+                        </p>
+                        <ul>
+                            <li>
+                                <p>- Remote control server migration support for mobile carriers</p>
+                            </li>
+                            <li>
+                                <p>- E-learning system development</p>
+                            </li>
+                            <li>
+                                <p>- Survey entry system development</p>
+                            </li>
+                            <li>
+                                <p>- SMS delivery service development</p>
+                            </li>
+                            <li>
+                                <p>- Windows Remote Management Library Development</p>
+                            </li>
+                            <li>
+                                <p>- Work Process Management iPad App & Management Server System Requirements Definition
+                                </p>
+                            </li>
+                            <li>
+                                <p>- Electronic approval system support services</p>
+                            </li>
+                            <li>
+                                <p>- Digital processing support for electronic magazines</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item fade">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <span class="date">March 23, 2013</span>
+
+                    <h3 class="toggle">Added project achievements</h3>
+
+                    <div class="content">
+                        <p>
+                            I think it's hard to tell from the names of each service what they're involved in or what
+                            areas
+                            they have strengths in,
+                        </p>
+                        <p>
+                            so I can't include customer names or details of the cases, but I'd like you to refer to
+                            them.
+                        </p>
+                        <p>
+                            Thanks to you, we have been able to get involved in many projects in the six months since we
+                            were established. Thank you very much.
+                        </p>
+                        <p>
+                            From now on, we will focus on developing products and services independently so that we can
+                            make
+                            suggestions and contributions to our customers.
+                        </p>
+                        <p style="margin-top: 10px;">
+                            We would like to continue to look forward to your continued support.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item fade">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <span class="date">January 1, 2013</span>
+
+                    <h3 class="toggle">Development base in Myanmar</h3>
+
+                    <div class="content">
+                        <p style="margin-bottom: 10px;">
+                            Happy New Year 2013. We would like to thank you for your continued support this year.
+                        </p>
+                        <p>
+                            In December, we were able to connect with Myanmar and decided to create an offshore
+                            development
+                            base in Yangon.
+                        </p>
+                        <p>
+                            We would like to start by partnering with local companies, securing and developing human
+                            resources, and develop our business in Japan with a competitive edge.
+                        </p>
+                        <p>
+                            From now on, we will focus on developing products and services independently so that we can
+                            make
+                            suggestions and contributions to our customers.
+                        </p>
+                        <p>
+                            If you are a company considering expanding into Myanmar, please feel free to contact us and
+                            we
+                            will help you link with local networks, including those other than IT infrastructure.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item fade">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <span class="date">October 21, 2012</span>
+
+                    <h3 class="toggle">Changed banner image</h3>
+
+                    <div class="content">
+                        <p style="margin-bottom: 10px;">
+                            The origin of the company name is "link mind" ＝ "connect the heart".
+                        </p>
+                        <p>
+                            In soccer, it's like forming a circle and trying to unite everyone.
+                        </p>
+                        <p>
+                            I hope to be able to work in the power of IT to connect minds in real-world situations,
+                        </p>
+                        <p>
+                            specifically bridging the gap between customers and engineers, and engineers and engineers.
+                            With
+                            that in mind, we changed the banner.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
-    <div class="image fade"></div>
+    <!-- CONTACT -->
+    <section class="contact-cta" id="contact">
 
-    <!-- CTA -->
-    <section>
-    <div class="cta-big">
-    <h2 class="contacttext fade">Ready to start your project?</h2>
-        <button class="btn fade" id="openContact">Contact Us</button>
-    </div>
-    <div id="contactModal" class="modal">
-        <div class="modal-content">
+        <h2 class="section-title fade">
+            Let's Build Together
+        </h2>
 
-        <span class="close-contact">&times;</span>
+        <p class="contact-description fade">
+            Contact Linkmind for AI, IoT, and offshore software development services.
+        </p>
 
-        <h2>Contact Us</h2>
+        <button class="contact-open-btn fade" id="openContactModal">
+            Contact Us
+        </button>
 
-            <div class="modal-body">
-                <form class="contact-form" id="contactForm">
+        <div class="contact-modal" id="contactModal">
 
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="number" name="phone" placeholder="Phone Number" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+            <div class="contact-modal-content fade">
 
-                    <button type="submit" class="btn submit-btn">Send Message</button>
+                <span class="contact-close">&times;</span>
+
+                <h2>Contact Linkmind</h2>
+
+                <p class="modal-subtitle">
+                    Software Development & Offshore Services
+                </p>
+
+                <form id="contactForm">
+
+                    <div class="input-group">
+                        <input type="text" name="name" required>
+                        <label>Name</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="number" name="phone" required>
+                        <label>Phone Number</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" name="email" required>
+                        <label>Email Address</label>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea name="message" rows="5" required></textarea>
+                        <label>Message</label>
+                    </div>
+
+                    <button type="submit" class="send-btn">
+                        Send Message
+                    </button>
 
                 </form>
+
             </div>
 
         </div>
-    </div>
-    <div id="toast" class="toast"></div>
     </section>
 
-    <footer>
-        <p>© 2020 Linkmind</p>
-        <p>Connecting Minds Through IT</p>
-        <a href="privacy.html">Privacy Policy</a>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- LEFT -->
+
+            <div class="footer-brand">
+
+                <img src="images/linkmind_logo.png" class="footer-logo" alt="Logo">
+
+                <p>
+                    Connecting Minds Through Technology.
+                </p>
+
+            </div>
+
+
+            <!-- CENTER -->
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="#hero">Home</a>
+
+                <a href="#services">Services</a>
+
+                <a href="#updates">Updates</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <!-- RIGHT -->
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <p>Linkmind Co., Ltd.</p>
+
+                <p>nakamura@linkmind.co.jp</p>
+
+                <p>Philippines • Japan</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2020 Linkmind Co., Ltd. All rights reserved.
+            </p>
+
+            <a href="privacy.html">
+                Privacy Policy
+            </a>
+
+        </div>
+
     </footer>
 
     <script src="JS/fade_effect.js"></script>
@@ -443,6 +745,9 @@
     <script src="JS/contact_modal.js"></script>
     <script src="JS/contactForm.js"></script>
     <script src="JS/show_toast.js"></script>
+    <script>
+    </script>
 
 </body>
+
 </html>

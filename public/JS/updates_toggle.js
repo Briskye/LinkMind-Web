@@ -1,7 +1,5 @@
-document.querySelectorAll(".toggle").forEach(title => {
-  title.addEventListener("click", () => {
-    const item = title.parentElement;
-
-    item.classList.toggle("active");
+document.querySelectorAll(".toggle").forEach(item => {
+  item.addEventListener("click", () => {
+    item.parentElement.parentElement.classList.toggle("active");
   });
 });

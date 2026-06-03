@@ -1,17 +1,25 @@
 const contactModal = document.getElementById("contactModal");
-const openContact = document.getElementById("openContact");
-const closeContact = document.querySelector(".close-contact");
 
-openContact.onclick = () => {
+document.getElementById("openContactModal")
+.addEventListener("click", () => {
+
   contactModal.style.display = "flex";
-};
 
-closeContact.onclick = () => {
+});
+
+document.querySelector(".contact-close")
+.addEventListener("click", () => {
+
   contactModal.style.display = "none";
-};
+
+});
 
 window.addEventListener("click", (e) => {
-  if (e.target === contactModal) {
+
+  if(e.target === contactModal){
+
     contactModal.style.display = "none";
+
   }
+
 });
